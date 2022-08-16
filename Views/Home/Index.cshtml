@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    List<string> A = new List<string>();
+    A.Add("bakar harami");
+    A.Add("bao rami");
+    String c = "";
+    String wow = "woww";
+}
+
+@model List<string>
+@section daddy {
+<div>
+    Daddys home
+</div>
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    @{
+        c = A.Contains("bakar harami") ? "abc " : "dca";
+    }
+    <partial name="_imeverywhere" model="c" />
+    <partial name="_imeverywhere" model="wow" />
+    <div ></div>
+</div>
