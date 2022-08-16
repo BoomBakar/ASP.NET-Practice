@@ -20,6 +20,8 @@ namespace WebApplication7.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.x = "Dar";
+            ViewData["y"] = "Dar2";
             return View();
         }
 
