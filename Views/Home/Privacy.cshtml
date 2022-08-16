@@ -1,6 +1,13 @@
-﻿@{
+﻿@model WebApplication7.Models.Person
+@{
     ViewData["Title"] = "Privacy Policy";
+    Person p = new Person();
+    p.name = "dar";
+    p.age = 21;
 }
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+
+<p>@p.name</p>
+<p>@p.age</p>
